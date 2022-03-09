@@ -1,6 +1,7 @@
 package it.polito.tdp.parole;
 
 import it.polito.tdp.parole.model.Parole;
+import it.polito.tdp.parole.model.Parole2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -48,8 +49,8 @@ public class FXMLController {
     	String n=new String();
     	for(String s: elenco.getElenco()) {
     		n=n+s+"\n";
-    		txtResult.setText(n);
     	}
+    	txtResult.setText(n);
     	long time=System.nanoTime();
     	txtTempi.setText(m+"Tempo Inserisci: "+(time-t)+ "\n");
     }
@@ -76,8 +77,8 @@ public class FXMLController {
     	String n=new String();
     	for(String S: elenco.getElenco()) {
     		n=n+S+"\n";
-    		txtResult.setText(n);
     	}
+    	txtResult.setText(n);
     	long time=System.nanoTime();
     	txtTempi.setText(m+"Tempo Cancella: "+(time-t)+"\n");
     }
@@ -89,6 +90,6 @@ public class FXMLController {
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Scene.fxml'.";
         assert btnReset != null : "fx:id=\"btnReset\" was not injected: check your FXML file 'Scene.fxml'.";
 
-        elenco = new Parole() ;
+        elenco = new Parole();
     }
 }

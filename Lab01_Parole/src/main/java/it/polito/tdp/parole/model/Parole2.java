@@ -3,9 +3,9 @@ package it.polito.tdp.parole.model;
 import java.util.*;
 
 public class Parole2 {
-	List<String> parole= new ArrayList<String>();	
+	List<String> parole;	
 	public Parole2() {
-		
+		parole= new ArrayList<String>();
 	}
 	
 	public void addParola(String p) {
@@ -19,14 +19,11 @@ public class Parole2 {
 	}
 	
 	public void reset() {
-		parole.removeAll(parole);
+		parole.clear();;
 	}
 	
 	public void cancella(String p) {
-		for(String s: parole) {
-			if(s.compareTo(p)==0)
-				parole.remove(s);
-		}
+		parole.remove(p);
 	}
 
 }
