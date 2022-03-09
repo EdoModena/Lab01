@@ -2,9 +2,9 @@ package it.polito.tdp.parole.model;
 
 import java.util.*;
 
-public class Parole {
-	List<String> parole= new LinkedList<String>();	
-	public Parole() {
+public class Parole2 {
+	List<String> parole= new ArrayList<String>();	
+	public Parole2() {
 		
 	}
 	
